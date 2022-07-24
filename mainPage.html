@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Navbar Start */
+        #navbar{
+           
+            display: flex;
+            width:100%;
+            height: 75px;
+            /* border:1px solid red; */
+            justify-content: space-around;
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            position: fixed;
+            background-color: white;
+            /* margin-top: -45px; */
+           
+           
+        }
+        #content{
+            margin-right: 200px;
+        }
+        #navbar>div{
+            cursor: pointer;
+        }
+        #navbar>div:nth-child(1){
+            height: 100%;
+        
+        }
+        #navbar>div:nth-child(1)>img{
+            height: 100%;
+        }
+        #navbar>div:nth-child(2){
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            width: 40%;
+            justify-content: space-around;
+           text-decoration: none;
+        }
+        #navbar>div:nth-child(2)>h2:nth-child(1):hover{
+            background-color:#c4c4c4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar>div:nth-child(2)>h2:nth-child(2):hover{
+            background-color:#c4c4c4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar>div:nth-child(2)>h2:nth-child(3):hover{
+            background-color:#c4c4c4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar>div:nth-child(2)>h2:nth-child(4):hover{
+            background-color:#c4c4c4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #navbar>div:nth-child(2)>h2:nth-child(5):hover{
+            background-color:#c4c4c4;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+      
+
+        #navbar>div:nth-child(3){
+            display: flex;
+            height: 75%;
+            justify-content: center;
+            align-items: center;
+            background-color: #9c3353;
+            color: white;
+            border: 1px solid #9c3353 ;
+            border-radius: 20px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 5px;
+        }
+        
+        #navbar>div:nth-child(4){
+            height: 100%;
+        }
+        #navbar>div:nth-child(4)>img{
+            height: 100%;
+        }
+        /* Navebar End */
+        #m{
+            width: 43%;
+            /* text-align: center; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            margin: auto;
+            padding: 10px 10px;
+            border-radius: 8px;
+            margin-top: 30px;
+            /* border: 1px solid; */
+            
+        }
+        h3>span{
+            background-color:#9c3353;
+            border-radius: 50%;
+            color: white;
+            padding: 0px 5px;
+            margin-left: 5px;
+        }
+        #container{
+            margin: 3% 12%;
+            /* line-height: 50%; */
+            font-size: larger;
+            color: #5d5d5d ;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-top: 0px;
+            /* border: 1px solid; */
+            
+            
+        }
+        h3+h3{
+            width: 42%;
+            height: 75%;
+            background-color: #9c3353;
+            color: white;
+            border: 1px solid #9c3353 ;
+            border-radius: 20px;
+            padding:10px 10px ;
+            margin-top: 8px;
+            
+        }
+        #box{
+            width: 80%;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            justify-content: flex-start;
+            justify-content: space-evenly;
+
+        }
+        #box>div+div+div{
+            margin-left: 20px;
+        }
+        #mainbox{
+            width: 100%;
+            display: flex;
+            margin-top: 00px;
+        
+        }
+        #mainbox>div:nth-child(2){
+            margin-top: 2%;
+        }
+        #mainbox>div:nth-child(2)>img{
+        width: 190%;
+        }
+        #per{
+            width:78%;
+            /* height: 55px; */
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+            background-color:#fbf3f5 ;
+            color: #212160;
+
+        }
+        #per>div{
+            font-size: 25px;
+        }
+        #per>div:nth-child(1){
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #mic{
+            width: 10%;
+            height: 60%;
+        }
+        #mic+h3{
+            margin-left: 3%;
+        }
+        #per>div:nth-child(3)>h1{
+            margin-left: 100px;
+        }
+        #per>div:nth-child(2)>img{
+            width: 150px;
+        }
+       #con{
+        text-align: center;
+       }
+       #con>img{
+        width: 30px;
+       }
+       /* search bar */
+       #container1{
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+        }
+        #searchbar{
+            width: 100%;
+            max-width: 700px;
+            background: rgba(255,255,255, 0.2);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 60px;
+            padding: 10px 20px;
+            backdrop-filter: blur(4px) saturated(180%);
+            border:1px solid #9c3353;
+            height: 60px;
+            
+        
+        }
+        #searchbar input{
+            background: transparent;
+            flex: 1;
+            border: 0;
+            outline: none;
+            padding: 24px 20px;
+            font-size: 20px;
+            color: #cac7ff;
+        }
+        ::placeholder{
+            color: #cac7ff;
+        }
+        #searchbar button img{
+            width: 25px;
+        }
+        #searchbar button{
+            border: 0;
+            border-radius:0px 50% 50% 0px;
+            width: 60px;
+            height: 100%;
+            background: #9c3353;
+            cursor: pointer;
+        }
+        #banner{
+            width: 50%;
+            height: 150px;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            margin:auto;
+            margin-top: 20px;
+            
+            
+           
+            
+        }
+        #banner>div{
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           border-radius: 10px;
+        }
+        #banner>div:hover{
+            background-color: #9c3353;
+        }
+       #benefits{
+        width:80%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,auto);
+        margin: auto;
+        gap: 20px;
+        margin-top: 30px;
+       }
+       #benefits>div{
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 20px;
+       }
+       #benefits>div>div{
+        width: 90%;
+       }
+        #benefits>div>img{
+            margin-top: 3%;
+            width:100%
+            
+    
+        }
+       #benefits>div>div>div{
+        width: 100%;
+        display: flex;
+       }
+       p+h2{
+        margin-left: 15px;
+       }
+
+       #logo{
+        width: 40%;
+       }
+       img+h3{
+        /* border: 1px solid; */
+        width: 100%;
+       }
+       #content{
+        text-decoration: none;
+       }
+       #ban{
+        width: 100%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        padding: 5px 17px;
+        text-align: center;
+        background-color: #f7f7f7;
+        margin-bottom: 2%;
+       }
+       a{
+        text-align: center;
+        color: #9c3353;
+       }
+      #contact{
+        width: 100%;
+        height: 150px;
+        background-color: #9c3353;
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+      } 
+      #cont{
+        width: 80%;
+        height: 60%;
+        background-color: white;
+        display: flex;
+        margin: auto;
+        border-radius: 20px;
+      }
+      #cont>div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        border: 1px solid black;
+        background-color: #9c3353;
+        border-radius: 20px;
+        margin-right: 80px;
+        height: 60%;
+        color: #fbf3f5;
+      }
+      #cont>h2{
+        margin-left: 10%;
+        padding-top: 10px;
+        font-size: 25px;
+        color: #5d5d5d;
+      }
+      #cont>div>img{
+        width: 12%;
+        margin-right: 20px;
+    
+      }
+     
+       
+    </style>
+</head>
+<body>
+    <div id="navbar">
+        <div>
+        <img src="https://assets.milaap.org/assets/milaap-logo-tiny-4d3dbc4e55c2aaec351f0f376329c624236c4d6266b910f472684e70603f600d.png" alt="">
+        </div>
+        <div id="content">
+            <a href="mainPage.html"><h2>Home</h2></a>
+            <a href="donate.html"><h2>Donate</h2></a>
+            <a href="https://milaap.org/fund"><h2>Lend</h2></a>
+            <a href="https://milaap.org/crowdfunding/pricing"><h2>Pricing</h2></a>
+            <a href="https://pages.milaap.org/contact-us/"><h2>Contact Us</h2></a>
+        </div>
+        <div>
+           <div>
+            <h2>
+                Start a fundraiser
+            </h2>
+           </div>
+        </div>
+        <div>
+            <img  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNTnKuFzx2Q3EqHYsrqQoVxWRxIu0A3pM8qADvlTxaHf2LCYJw" alt="">
+            <hr>
+        </div>
+    </div>
+   
+        <div>
+            <h3 id="m">7-Year-Old With Rapidly Growing Facial Tumour Needs Urgent Surgery <span>></span></h3>
+        </div>
+    <div id="mainbox">
+        <div id="container">
+                <div>
+                    <h1>Milaap</h1>
+                    <h3>Free funds online for online for medical emergencies and social causes</h3>
+                    <h3>Start fundraiser - it's FREE</h3>
+                    <div id="box">
+                        <div>
+                            <h2>665,000+</h2>
+                            <h4>Fundraisers</h4>
+                            <div id="vl"></div>
+                        </div>
+                        <div>
+                            <h2>$283 Million +</h2>
+                            <h4>Raised</h4>
+                            <div id="vl"></div>
+                        </div>
+                        <div>
+                            <h2>8.1 Million+</h2>
+                            <h4>Donations</h4>
+                            <div id="vl"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <div>
+        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcQNmneoNuS2iIm34pakTibxZHIU3dO5C56nESIuuP-YLh_qHYrh" alt="">
+       </div>
+    </div>
+    <div id="per">
+        <div>
+            <img id="mic" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRRXykmg38i96q-h4GXZ3oldFT0jUp1DdISmHeLCEXUQO3YTbaX" alt="">
+            <h3>Our crowdfunding platform charges NO fees</h3>
+        </div>
+        <div>
+            <img   src="https://assets.milaap.org/assets/home/diamond-9ce851717cc50c7de40ec2977af60e21c799ad40001782db3fa136582b0e4ff5.png" alt="">
+        </div>
+        <div>
+            <h1>0%</h1>
+        </div>
+    </div>
+    <div id="con">
+        <h2>Thousand are fundraising online on Milaap</h2>
+        <img id="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQw_DWLjNDPEH2pPYXGZb7rhNbgoz15gfBvMQUfZ9FwRINCWtc" alt="">
+    </div>
+    <!-- search bar -->
+    <div id="container1">
+        <form action="https://www.google.com/search" method="get" id="searchbar" >
+            <input type="text" placeholder="Search by fundraiser name , title ,location , cause or other keyboards" name="q">
+            <button type="submit"><img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcT8knVU4isdJWiabItIt0drux9s8ldanRQHNhJYX0zRNPzIO6_Z" alt=""></button>
+        </form>
+    </div>
+    <div id="banner">
+        <div><img src="https://cimages.milaap.org/milaap/image/upload/v1656419855/Black_flood_1_gvivow.png" alt="">
+        </div>
+    <div><img src="https://assets.milaap.org/assets/home/medical-icon-22eba5bcdf629bb6e4244cdaab2d40c12e2e5fa63b83d27654423737ef4319ca.png" alt=""></div>
+    <div><img src="https://assets.milaap.org/assets/home/memorial-icon-d649fd768074bb5124e32420e406bb00b1524ee5d277747db46964e82ad914bb.png" alt=""></div>
+    <div><img src="https://assets.milaap.org/assets/home/all-icon-c540de74d815e7275a4bbebda41374b9fc528ba1a5791d71cd28c73ab27fdcd7.png" alt=""></div>
+    </div>
+    <div id="benefits">
+        <div>
+            <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_198,w_264/v1658298632/production/images/campaign/535593/xhh05e3zycg79eug7bln_1658298637.jpg" alt="">
+            <h3>Support My Son To Recover From Multiple Accidental Injuries</h3>
+            <div>
+                <div>
+                    <img id="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtneKTGR60PB8-fVh_-z1kaVhk4KgZlODSUNdy4Owkf08naED" alt="">
+                    <p>Raised</p>
+                    <h2>$5,520</h2>
+             </div>
+            </div>
+            <div id="ban">
+                <p>Recieve tax benefits by donating to this cause</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_198,w_264/v1658393180/production/images/campaign/536406/9E29A133-3B6D-466B-A32C-CF04D10E9941_vgvpeg_1658393190.jpg" alt="">
+            <h3>Support Samhita Recover From Acute Leukemia (Cancer)</h3>
+            <div>
+                <div>
+                    <img id="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtneKTGR60PB8-fVh_-z1kaVhk4KgZlODSUNdy4Owkf08naED" alt="">
+                    <p>Raised</p>
+                    <h2>$5,520</h2>
+                </div>
+               
+            </div>
+            <div id="ban">
+                <p>Recieve tax benefits by donating to this cause</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_198,w_264/v1658386446/production/images/campaign/512231/IMG-20220518-WA0002_anx3kr_1655611260_aat71a_1658386451.jpg" alt="">
+            <h3>29 years old Rohit Kumar needs your help fight Head injury and get back on his feet after 3 years</h3>
+            <div>
+                <div>
+                    <img id="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtneKTGR60PB8-fVh_-z1kaVhk4KgZlODSUNdy4Owkf08naED" alt="">
+                    <p>Raised</p>
+                    <h2>$5,520</h2>
+                </div>
+               
+            </div>
+            <div id="ban">
+                <p>Recieve tax benefits by donating to this cause</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_198,w_264/v1658217873/production/images/campaign/534371/rnbcewffyoivvphmxkaj_1658217878.jpg" alt="">
+            <h3>38 years old Lalita Narayan Mishra Needs Your Help Fight Blood Cancer</h3>
+            <div>
+                <div>
+                    <img id="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtneKTGR60PB8-fVh_-z1kaVhk4KgZlODSUNdy4Owkf08naED" alt="">
+                    <p>Raised</p>
+                    <h2>$5,520</h2>
+                </div>
+               
+            </div>
+            <div id="ban">
+                <p>Recieve tax benefits by donating to this cause</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_198,w_264/v1658387901/production/images/campaign/536359/IMG-20220720-WA0044_swo4v7_1658388093.jpg" alt="">
+            <h3>My Friend Navnath Balasaheb Lendghar is struggling with Accendental Head Injury ,help him/her</h3>
+            <div>
+                <div>
+                    <img id="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtneKTGR60PB8-fVh_-z1kaVhk4KgZlODSUNdy4Owkf08naED" alt="">
+                    <p>Raised</p>
+                    <h2>$5,520</h2>
+                </div>
+              
+            </div>
+            <div id="ban">
+                <p>Recieve tax benefits by donating to this cause</p>
+            </div>
+        </div>
+        <div>
+            <img src="https://cimages.milaap.org/milaap/image/upload/c_fill,g_faces,h_198,w_264/v1654348028/production/images/campaign/510184/WhatsApp_Image_2022-06-04_at_6.35.51_PM_pkg8qd_1654348032.jpg" alt="">
+            <h3>2Years old Priyashreee Aishwarya Mungara Needs Your Help To Recover From Chronic Kidney Diesease</h3>
+            <div>
+                <div>
+                    <img id="logo" src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTNtneKTGR60PB8-fVh_-z1kaVhk4KgZlODSUNdy4Owkf08naED" alt="">
+                    <p>Raised</p>
+                    <h2>$5,520</h2>
+                </div>
+                
+            </div>
+            <div id="ban">
+                <p>Recieve tax benefits by donating to this cause</p>
+            </div>
+        </div>
+    </div>
+    <a href="https://milaap.org/crowdfunding/fundraisers?tags=assam-floods">
+        <h2>See more fundraisers</h2>
+    </a>
+    <div id="contact">
+        <div id="cont">
+            <h2>Need help to setup your free fundraiser?</h2>
+            <div>
+                <img src="data:image/png;base64,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" alt="">
+                <h2>Request a call</h2>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
